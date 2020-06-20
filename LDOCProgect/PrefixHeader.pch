@@ -8,6 +8,15 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+//三方框架
+#import <AFNetworking/AFNetworking.h>
+//#import <BGFMDB/BGFMDB.h>
+#import <FMDB.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <Masonry/Masonry.h>
+#import <YYText/YYText.h>
+#import <SDWebImage/SDImageCache.h>
 
 //分类
 #import "UIColor+UIColorCategory.h"

@@ -14,10 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BGFMDB (2.0.13):
+    - BGFMDB/BG (= 2.0.13)
+    - BGFMDB/FMDB (= 2.0.13)
+  - BGFMDB/BG (2.0.13):
+    - BGFMDB/FMDB
+  - BGFMDB/FMDB (2.0.13)
   - FDFullscreenPopGesture (1.1)
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
   - Masonry (1.1.0)
   - MJExtension (3.0.17)
   - MJRefresh (3.1.15.7)
@@ -28,8 +31,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - BGFMDB
   - FDFullscreenPopGesture (~> 1.1)
-  - FMDB (= 2.7.5)
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.15.3)
@@ -39,8 +42,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - BGFMDB
     - FDFullscreenPopGesture
-    - FMDB
     - Masonry
     - MJExtension
     - MJRefresh
@@ -49,14 +52,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BGFMDB: 48e6823027232402a678acc7f71484b1fc9171d0
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: eb41f326f437bc5fd960c0c355a0f0d7e0027207
+PODFILE CHECKSUM: a966e74633b9731ea81423ea758e31f2a0aefe38
 
 COCOAPODS: 1.9.0.beta.2

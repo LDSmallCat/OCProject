@@ -2,6 +2,7 @@
 # platform :ios, '9.0'
 
 target 'LDOCProgect' do
+  inhibit_all_warnings!
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -11,7 +12,7 @@ target 'LDOCProgect' do
  pod 'Masonry', '~> 1.1.0'
  pod 'MJExtension', '~> 3.0.13'
  pod 'MJRefresh', '~> 3.1.15.3'
- pod 'FMDB','2.7.5'
+ pod 'BGFMDB'
  pod 'YYText', '~> 1.0.7'
  #pod 'MyLayout', '~> 1.8.0'
  
