@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D4B530FF285ED044885ECCB /* Pods_LDOCProgect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700F428BC5100E418C8B2E84 /* Pods_LDOCProgect.framework */; };
 		D2259DFA249DDE3400891C5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2259DF9249DDE3400891C5F /* AppDelegate.m */; };
 		D2259DFD249DDE3500891C5F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2259DFC249DDE3500891C5F /* SceneDelegate.m */; };
 		D2259E05249DDE3600891C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2259E04249DDE3600891C5F /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		700F428BC5100E418C8B2E84 /* Pods_LDOCProgect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDOCProgect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2259DF5249DDE3400891C5F /* LDOCProgect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDOCProgect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2259DF8249DDE3400891C5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2259DF9249DDE3400891C5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		D2259E5E249DF56C00891C5F /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		D2259E5F249DFBB900891C5F /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		D2259E60249DFCBE00891C5F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E1D35B19B57753CE812E82E4 /* Pods-LDOCProgect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDOCProgect.release.xcconfig"; path = "Target Support Files/Pods-LDOCProgect/Pods-LDOCProgect.release.xcconfig"; sourceTree = "<group>"; };
+		FE53138A3A802E9ED5E07695 /* Pods-LDOCProgect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDOCProgect.debug.xcconfig"; path = "Target Support Files/Pods-LDOCProgect/Pods-LDOCProgect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4B530FF285ED044885ECCB /* Pods_LDOCProgect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,8 @@
 			children = (
 				D2259DF7249DDE3400891C5F /* LDOCProgect */,
 				D2259DF6249DDE3400891C5F /* Products */,
+				DB522DA70178710D8F27F3AE /* Pods */,
+				DE6E78E7D051975053C5EE1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,6 +358,24 @@
 			name = SystemFile;
 			sourceTree = "<group>";
 		};
+		DB522DA70178710D8F27F3AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE53138A3A802E9ED5E07695 /* Pods-LDOCProgect.debug.xcconfig */,
+				E1D35B19B57753CE812E82E4 /* Pods-LDOCProgect.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE6E78E7D051975053C5EE1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				700F428BC5100E418C8B2E84 /* Pods_LDOCProgect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,9 +383,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2259E0E249DDE3600891C5F /* Build configuration list for PBXNativeTarget "LDOCProgect" */;
 			buildPhases = (
+				D52573DDCB738BF5C9A98461 /* [CP] Check Pods Manifest.lock */,
 				D2259DF1249DDE3400891C5F /* Sources */,
 				D2259DF2249DDE3400891C5F /* Frameworks */,
 				D2259DF3249DDE3400891C5F /* Resources */,
+				6C03B13B53CCBEA10E4107A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,6 +441,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C03B13B53CCBEA10E4107A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LDOCProgect/Pods-LDOCProgect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LDOCProgect/Pods-LDOCProgect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LDOCProgect/Pods-LDOCProgect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52573DDCB738BF5C9A98461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LDOCProgect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2259DF1249DDE3400891C5F /* Sources */ = {
@@ -569,6 +638,7 @@
 		};
 		D2259E0F249DDE3600891C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE53138A3A802E9ED5E07695 /* Pods-LDOCProgect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +656,7 @@
 		};
 		D2259E10249DDE3600891C5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D35B19B57753CE812E82E4 /* Pods-LDOCProgect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
